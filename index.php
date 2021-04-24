@@ -90,7 +90,25 @@ function dateTimeDemo(){
 //dateTimeDemo();
 
 function fileManuplation(){
-    echo readfile('./formAction.php');
+   // readfile is readOnly use fopen then fread 
+   // echo readfile('./formAction.php');
+   
+    // fopen(fileLocation,Mode) to openup Files returns FileResource type
+    $fopenFile=fopen("./formAction.php","r");
+    // fread( File Resource, FileSize)   filesize("Path to File") 
+
+    echo fread($fopenFile,filesize("./formAction.php"));
+    
+    // Always Close the files golden Rule
+    
+    fclose($fopenFile);
+
+    // feof() check if end-of-file has came returns true or false
+    
+    /* while(!feof($fopenFile)){
+        echo fgets($fopenFile)."<br>";
+    }
+ */
 }
 fileManuplation();
 
