@@ -110,7 +110,7 @@ function fileManuplation(){
     }
  */
 }
-fileManuplation();
+//fileManuplation();
 
 ?>
 <!---
