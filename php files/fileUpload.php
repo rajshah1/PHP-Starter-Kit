@@ -6,7 +6,7 @@ $uploadPath = $uploadFolder . $_FILES["filePath"]["name"];
 // pathinfo($uploadPath,PATHINFO_EXTENTION) to get Path or uploaded file directory 
 $extentionLower = strtolower(pathinfo($uploadPath, PATHINFO_EXTENSION));
 // Tmp file name this is temporary path 
-//echo $_FILES["filePath"]["tmp_name"];
+// echo $_FILES["filePath"]["tmp_name"];
 
 // This actually moves the file to location 
 move_uploaded_file($_FILES["filePath"]["tmp_name"], $uploadPath);
