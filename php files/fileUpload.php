@@ -3,8 +3,8 @@
 $uploadFolder = "../uploads/";
 // Full Path with fileName also 
 $uploadPath = $uploadFolder . $_FILES["filePath"]["name"];
-// pathinfo($uploadPath,PATHINFO_EXTENTION) to get Path or uploaded file directory 
-$extentionLower = strtolower(pathinfo($uploadPath, PATHINFO_EXTENSION));
+// pathinfo($uploadPath,PATHING_EXTENSION) to get Path or uploaded file directory
+$extensionLower = strtolower(pathinfo($uploadPath, PATHINFO_EXTENSION));
 // Tmp file name this is temporary path 
 // echo $_FILES["filePath"]["tmp_name"];
 
