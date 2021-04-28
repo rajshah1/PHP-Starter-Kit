@@ -3,9 +3,9 @@
 //$name = "Raj Shah";
 //echo $name;
 
-for ($i = 0; $i < 10; $i++) {
-    //echo "\n $i";
-}
+//for ($i = 0; $i < 10; $i++) {
+//    //echo "\n $i";
+//}
 
 $x = 10;
 function usageOfVariable()

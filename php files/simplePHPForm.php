@@ -17,10 +17,19 @@ function functionCallbacks(string $name, int $age):string
 
 $functioncall= functionCallbacks($name,$age);
 
-echo $functioncall;
+//echo $functioncall;
 
-$ageNameArray=array("Raj Shah"=>10,"utsav vohra"=>30);
+$ageNameArray=array($name=>$age);
 
-array_map("functionCallbacks",$ageNameArray);
+
+foreach ($ageNameArray as $key=>$value){
+    echo functionCallbacks($key,$value);
+}
+
+// Exceptions Format in PHP
+
+new Exception("Error Occured ",1,null);
+
+
 
 
