@@ -5,6 +5,10 @@
 
 spl_autoload_register('autoloadClass');
 
+
+// Declare strict type as true.
+//declare(strict_types=1);
+
 function autoloadClass(string $className){
     $folderPath="../oop concepts/";
     $extension=".php";
