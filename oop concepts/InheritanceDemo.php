@@ -1,12 +1,13 @@
 <?php
 
 // If you do not include this require_once means that : it will not able to find the objectOrientedProject.php class
-//  require_once 'objectOrientedProject.php';
+  require_once 'objectOrientedProject.php';
 
 
 // this is more smart way to auto load classes always include this autoloader script where you initialize
 // class ex new Person("sas");
-include '../includes/autoloader.inc.php';
+
+require_once '../includes/autoloader.inc.php';
 
 class InheritanceDemo extends objectOrientedProject
 {
@@ -19,7 +20,7 @@ class InheritanceDemo extends objectOrientedProject
     public function accessInheritanceProperty(): string
     {
         // we can access private variable in public method
-        return $this->surname . " - " . $this->variableOfthis;
+        return $this->surname . " - " . self::$race;
     }
 
 
@@ -31,10 +32,10 @@ class InheritanceDemo extends objectOrientedProject
     }
 }
 
-$inhertanceObject = new InheritanceDemo("Raj", 28, "Shah 1");
-echo $inhertanceObject->accessInheritanceProperty();
+//$inhertanceObject = new InheritanceDemo("Raj", 28, "Shah 1");
+//echo $inhertanceObject->accessInheritanceProperty();
 // static variable access
-echo InheritanceDemo::$race;
+//echo InheritanceDemo::$race;
 // static Method access
-echo InheritanceDemo::staticMethod("Indian");
+//echo InheritanceDemo::staticMethod("Indian");
 

@@ -18,7 +18,6 @@ class objectOrientedProject
         $this->age = $age;
         $this->surname = $surname;
 
-
     }
 
     public function __toString()
@@ -30,7 +29,7 @@ class objectOrientedProject
 
 }
 
-$object = new objectOrientedProject("Raj", 120, "Shah");
+//$object = new objectOrientedProject("Raj", 120, "Shah");
 
 // Direct Print will call up Implemented __toString Method of the class.
 // Also you can call methods by -> then method.

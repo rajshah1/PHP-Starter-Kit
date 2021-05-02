@@ -14,6 +14,7 @@ function autoloadClass(string $className){
     $extension=".php";
     $fullPathToClass=$folderPath.$className.$extension;
 
+    echo $fullPathToClass;
     if(!file_exists($fullPathToClass)){
         return false;
     }
