@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class OopClassTest extends TestCase
 {
-    /** @test */
+    /** @tests */
     public function InheritanceDemoTest()
     {
         require_once '../includes/autoloader.inc.php';

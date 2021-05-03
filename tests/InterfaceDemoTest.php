@@ -19,7 +19,7 @@ class InterfaceDemoTest extends TestCase
     /**
      * @depends test_connectionOpen
      */
-    // depends on results of test_connectionOpen() test and if that fails this will not be run and skipped.ssssxs
+    // depends on results of test_connectionOpen() tests and if that fails this will not be run and skipped.ssssxs
     public function test_connectionClose()
     {
 
