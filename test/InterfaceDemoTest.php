@@ -8,7 +8,7 @@ class InterfaceDemoTest extends TestCase
 
     public function test_connectionOpen()
     {
-        require_once './includes/autoloader.inc.php';
+        require_once '../includes/autoloader.inc.php';
 
         $interfaceObj = new InterfaceDemo();
         $result = $interfaceObj->connectionOpen();

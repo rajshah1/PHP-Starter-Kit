@@ -1,7 +1,7 @@
 <?php
 
 // If you do not include this require_once means that : it will not able to find the objectOrientedProject.php class
-  require_once 'objectOrientedProject.php';
+  //require_once 'objectOrientedProject.php';
 
 
 // this is more smart way to auto load classes always include this autoloader script where you initialize

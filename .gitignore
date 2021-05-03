@@ -1,1 +1,3 @@
 uploads/*
+/.phpunit.result.cache
+/phpunit.phar
