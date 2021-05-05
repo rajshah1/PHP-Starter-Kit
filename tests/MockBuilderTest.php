@@ -26,6 +26,17 @@ class MockBuilderTest extends TestCase
         // $stubObj->method('connectionOpen')->will($this->returnArgument(0));
         // Argument can be changed as per events.
 
+
+        // Run Callback Functions like AutoLoader.inc.php class
+
+        // $stubObj->method('connectionOpen')->will($this->returnCallback('strtoupper'));
+        // when we call connectionOpen method above line will create strtoupper(argument) in return response.
+
+        // onConsecutiveCall('Raj','Pranav','shah')
+
+        // Test Error Handling using throwException(new Exception)
+
+
         $this->assertSame('MockerBuilder Test', $stubObj->connectionOpen());
 
 
